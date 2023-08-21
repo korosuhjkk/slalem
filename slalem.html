@@ -1,0 +1,172 @@
+<script>
+// https://www.youtube.com/watch?v=ivdTnPl1ND0 
+    console.log("Hello word");
+
+console.log("hola mundo");
+// comentario de una linea para dejar algun texto o alguna descripcion sobre lo que queremos hacer
+/* comentario de varias lineas
+podemos escribir en diferentes
+lineas nuestro texto */
+</script>
+
+<script>
+/* Tipos de Datos:
+Undefined: indefinido cuando no existe un valor asignado
+Null: nulo 
+Boolean: buliano, los valores de verdad verdadero y falso
+String: tipo de dato para representar cadena de caracteres
+Symbol: cualquier tipo de simbolo ya sea numero
+Number: para representar un numero dentro del codigo
+Object: para representar un objeto dentro del codigo
+una variable es una cajita donde podemos guardar un valor para crear un espacio en la memoria del dispoitivo
+se escribe con var ( nombre de la variable ) */
+var asas = "freeCodeCampssssss";
+// el nombre de la variable puede ser cualquiera, (sin numeros solo caracteres)
+//para mostrar la variable debemos escribirlo en el codigo de la consola
+console.log(asas)
+var miNombre = "Ignacio"
+miNombre = 29;
+
+//idealmente cada variable debe tener un nombre descriptivo para que podamos saber
+// de que hablamos en  todo momento y tambien le podemos asignar un valor 
+/* existen 3 tipos de variables
+var
+let
+const 
+/* las variables tienen un valor por defecto que se llama undefined 
+por ejemplo */
+var a;
+var b =2;
+
+console.log(a) // tendra un valor indefinido ( undefined )
+console.log(b) // ya tiene un valor establecido arriba ( b = 2)
+// para asignar un valor se le debe poner un operador de asignacion de javascript ( = ) 
+//asigna el valor de la derecha al valor de la izquierda
+a = 10;
+console.log(a); // a tendra un valor de 10 que fue asignado arriba 
+// le dijimos a la consola que despues de no tener un valor de "a" encontramos su valor y que lo muestre
+</script>
+<script>
+// para generar un valor de una variable a otra variable
+var a = 5;
+var b = a;
+
+console.log(a)
+console.log(b)
+// teoricamente deberian tener el mismo valor por que estamos asigando una variable a otra
+// una vez creada una variable se puede asignar un valor en cualquier momento 
+var a = 5;
+var b = a;
+
+b = a;
+console.log(a)
+console.log(b)
+
+// podemos asignar en cualquier momento
+
+//repaso de terminologia tecnica
+
+var x = 9;  // inicializando la variable x con el valor 9
+var miIdioma = "español"; // en javascript se ocupa camelCase, siempre la primera en minuscula y segunda en mayuscula
+// tambien existen las variables let y const
+
+//nombre importante de variables no inicializadas 
+var a; //no ha sido inizializada por que no tiene un valor el cual seria undefined
+var b; // tampoco tiene valor por lo cual seria undefinded
+
+console.log(a); // undefined
+console.log(b);// undefined
+a = 56 // le asignamos un valor a a, no importa donde ni cuando 
+
+console.log(a) // ahora mostrara el valor de 56 que le acabamos de asignar
+
+// javascript es sensible a mayusculas y minusculas por lo cual debemos tener cuidado con lo que escribimos ya que podria producir un error en el codigo
+var miVariable = 5;
+
+console.log(MIVARIABLE); // nos dara error por no existir ya que es distinta con mayuscula y minuscula
+console.log(mIvArIaBlE);// ERROR
+console.log(miVariable); // error
+
+console.log(miVariable);// nos dara el resultado de 5
+//siempre debemos tener cuidado con las mayusculas
+// debe ser siempre exacto a como lo escribimos
+</script>  
+<script>
+// operaciones aritmeticas 
+var suma = 7 + 12;
+
+console.log(suma);// 19 que serai el resultado de 7 + 2
+
+var resta = 15 - 5; // resultado positivo
+console.log(resta)
+
+resta = 5- 15; // resultado negativa
+console.log(resta)
+
+resta = 15 - 15; // resultado sera cero
+console.log(resta)
+
+var producto = 5 * 3;
+console.log(producto); // daria 15 lo que esperabamos
+
+producto = 9 * 0;
+console.log(producto); // deberia dar un valor de 0
+
+producto = -5 * 6;
+console.log(producto); // deberia ser -30
+
+var cociente = 20 / 2;
+console.log(cociente); // numero entero valor 10
+
+cociente = 17 / 31; 
+console.log(cociente); // la division tiene numero finito
+
+cociente = 3 / 0;
+console.log(cociente); // en vez de dar un error matematico nos da un valor infinito
+/* sintaxis 
+para ir incrementando de uno en uno podemos usar el symbolo ++ ejemplo si tengo 87 y quiero sumar 1
+basta con poner ++ y nos aumentara un numero*/
+
+//let myVar = 87;
+//myVar++ ; // el resultado de esta suma seria 88
+//console.log(myVar);
+
+//let myVar = 87;
+//myVar--; // el resultado de esto deberia ser 86
+//console.log(myVar);
+
+//numeros decimales
+var miNumeroDecimal = 23.4;
+
+var peso = 78.34;//inmediatamente al poner un punto estamos trabajando con un decimal
+
+// tambien se pueden realizar operaciones matematicas de sumas restas y multiplicaciones de la misma forma
+// que arriba pero con decimales
+
+var producto = 3.4 * 10.4;
+console.log(producto);// el valor deberia ser 35.36
+//siempre la consola va a aproximar los decimales 
+
+//dividir numero decimales
+
+var cociente = 5.0 / 2.0;// siempre los decimales se deben representar con el . 
+console.log(cociente);
+// todas las operaciones son iguales a las normales 
+
+// divisiones exactas e inexactas 
+var resto = 15 % 5;
+console.log(resto); // deberia ser 0 debido a que 5 cabe 3 veces en 15 y nos da un resultado de 0
+
+// asignacion compuesta con adicion aumentada
+//myVar = myVar + 5
+let myVar = 1;
+myVar += 5;
+console.log(myVar); //el signo += nos refiere a que myVar equivale a 5 y se suma el resto 
+// por lo cual el resultado seria 6 
+// dandonos una suma igual a decir myVar = 1 + 5 
+//myVar += 5; => myVar = 1 + 5 ( por que arriba dijimos que myVar equivale a 1 )
+
+// esto tambien aplica para sumas restas multiplicacion y division 
+
+//cadena de caracteres 
+</script>
